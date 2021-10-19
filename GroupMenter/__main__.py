@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey there! My name is Group Menter.
+HOI , IM NIR🥀.
 I'm here to help you manage your groups!
 
 Hit /help to find out more about how to use me to my full potential.
@@ -83,11 +83,11 @@ Hit /help to find out more about how to use me to my full potential.
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD TO YOUR GROUP ➕️", url="https://t.me/GroupMenterRobot?startgroup=true"),
+            text="➕️ ADD TO YOUR GROUP ➕️", url="https://t.me/NIR?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Updates", url="https://t.me/GroupMenterUpdates"),
-        InlineKeyboardButton(text="Support", url="https://t.me/GroupMenterGroup"),
+        InlineKeyboardButton(text="Updates", url="https://t.me/concerning_nir"),
+        InlineKeyboardButton(text="Support", url="https://t.me/nir_bot_support"),
     ],
     [
         InlineKeyboardButton(
@@ -98,7 +98,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey There! My name is Group Menter.
+Hey There! My name is NIR🥀.
 I'm here to help you manage your groups!
 
 Commands available:
@@ -116,7 +116,7 @@ Your donation might also me get me a new feature or two, which I wasn't able to 
 
 All the fund would be put into my services such as database, storage and hosting!.
 
-You Can donate to this bot via [PayPal](paypal.me/vivektvp) Or [Buy Me a Coffee.](https://ko-fi.com/VIVEKTP)"""
+You Can donate to this bot via [NIR](https://t.me/concerning_nir) Or [Buy Me a Coffee.](https://ko-fi.com/VIVEKTP)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -180,7 +180,7 @@ def send_help(chat_id, text, keyboard=None):
 @run_async
 def test(update: Update, context: CallbackContext):
     # pprint(eval(str(update)))
-    # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
+    # update.effective_message.reply_text("HOI tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
     update.effective_message.reply_text("This person edited a message")
     print(update.effective_message)
 
@@ -361,7 +361,7 @@ def groupmenter_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "groupmenter":
         query.message.edit_text(
-            text=""" 🤖 I'm *Group Menter*, a powerful group management bot built to help you manage your group easily.
+            text=""" 🤖 I'm *NIR*, a powerful group management bot built to help you manage your group easily.
                  
 ❍ I can restrict users.
                  
@@ -376,7 +376,7 @@ def groupmenter_about_callback(update: Update, context: CallbackContext):
 ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Group Menter's licensed under the GNU General Public License v3.0_
                  Here is the [💾Repository](https://github.com/TeamGroupMenter/GroupMenter).
-                 If you have any question about Group Menter, let us know at @GroupMenterUpdates.""",
+                 If you have any question about NIR, let us know at @aesthetic_nir.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -402,8 +402,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Group Menter*
-                 \nHere is the [Source Code](https://github.com/TeamGroupMenter/GroupMenter) .""",
+            text=""" Hi..🥀✨ I'm *NIR*
+                 \nHere is the [Source Code](https://t.me/concerning_nir) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
